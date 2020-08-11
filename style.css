@@ -1,0 +1,12 @@
+.todoList {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 60vh;
+}
+
+#list {
+  padding: 10px;
+  padding-right: 30px;
+}
