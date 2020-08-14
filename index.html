@@ -3,27 +3,134 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - todoList</title>
+  <title>CSS Animation</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
   <!-- partial:index.partial.html -->
-  <!-- https://darrenyaoyaotest.github.io/ -->
+  <div class="container">
+    <!-- <div class="title">Javascript</div>
+    <div class="subTitle">OwO</div> -->
+  </div>
+  <div class="introContainer"> 因為最近迷上刺繡 所以想做個自己的專屬網頁 可以放作品跟其他刺繡作家的作品連結 也順便做了一個方便網拍買線的小工具 </div>
+  <!-- partial -->
 
-  <div class="todoList">
-    <div class="inputText">
-      <input type="text" id="text" placeholder="請輸入代辦事項~~">
-      <input type="button" id="send" value="加入"></div>
-    <div id="list"></div>
+  <div class="colorBoard">
+    <div class="colorBoardImg">
+      <img src="https://www.lecien.co.jp/en/wp/wp-content/uploads/2019/08/cosmo_no25.jpg" alt="">
+    </div>
+
+    <form>
+      <div class="pickBlocks">
+        <label class="pickBlock">
+          <input type="checkbox" name="peas" value="832">
+        </label>
+        <label class="pickBlock">
+          <input type="checkbox" name="peas" value="833">
+        </label>
+        <label class="pickBlock">
+          <input type="checkbox" name="peas" value="834">
+        </label>
+        <label class="pickBlock">
+          <input type="checkbox" name="peas" value="835">
+        </label>
+
+        <label class="pickBlock">
+          <input type="checkbox" name="peas" value="836">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas" value="837">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas" value="838">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas" value="101">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas" value="102">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas" value="103A">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label><label class="pickBlock">
+          <input type="checkbox" name="peas" value="103A">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label><label class="pickBlock">
+          <input type="checkbox" name="peas" value="103A">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label><label class="pickBlock">
+          <input type="checkbox" name="peas" value="103A">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label><label class="pickBlock">
+          <input type="checkbox" name="peas" value="103A">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label><label class="pickBlock">
+          <input type="checkbox" name="peas" value="103A">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label><label class="pickBlock">
+          <input type="checkbox" name="peas" value="103A">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label><label class="pickBlock">
+          <input type="checkbox" name="peas" value="103A">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label> <label class="pickBlock">
+          <input type="checkbox" name="peas">
+        </label>
+
+        <input type="button" id="selectedButton" value="確定" onclick="check(this.form)"></div>
+    </form>
+    <div id="buyingList">您選擇的顏色代碼是 :</div>
   </div>
 
-  <!-- <button id="send"> 加入</button> -->
-  <!-- onClick="addData()" -->
-  <!-- partial -->
-  <script src="./script.js"></script>
-
 </body>
+<script src="./script.js"> </script>
 
 </html>

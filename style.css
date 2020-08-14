@@ -1,12 +1,277 @@
-.todoList {
-  display: flex;
-  align-items: center;
-  flex-flow: column nowrap;
-  justify-content: center;
-  height: 60vh;
+body {
+  margin: 0;
+  font-family: Microsoft JhengHei;
 }
 
-#list {
-  padding: 10px;
-  padding-right: 30px;
+.introContainer {
+  /* width: 100vh; */
+  height: 100px;
+  background: rgba(231, 231, 231, 0.911);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: rgb(125, 51, 155);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.8)),
+    url("http://www.kanahei.com/upload/2020/08/01_16x9.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.container::before {
+  position: absolute;
+  top: 45%;
+  width: 30%;
+  height: 10%;
+  content: "Usagi-Stitch";
+  background: red;
+  /* background: linear-gradient(360deg, rgb(105, 188, 255), rgba(255, 255, 255, 1)2%, rgb(105, 188, 255), rgba(255, 255, 255, 1)2%, rgb(105, 188, 255)); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: rgb(153, 0, 255); */
+  font-style: italic;
+  font-family: Courier New, cursive;
+  font-size: 50px;
+  animation: textshining 4s ease-in-out 0.5s 1 forwards;
+  /* color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 10;
+}
+
+.container::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: rgb(153, 0, 255); */
+  background: rgba(0, 0, 0, 0.9);
+  font-style: italic;
+  font-size: 70px;
+  animation: float 4s ease-in-out 0.5s 1 forwards;
+}
+
+
+
+
+@keyframes float {
+  0% {
+    opacity: 1;
+    /* color: rgba(153, 0, 255, 1); */
+  }
+
+  7% {
+    opacity: 1;
+    /* color: rgba(153, 0, 255, 1); */
+  }
+
+  8% {
+    opacity: 1;
+    /* color: rgb(255, 1, 1); */
+    /* margin-left: -2px; */
+    /* margin-top: -2px; */
+  }
+
+  9% {
+    opacity: 1;
+    /* color: rgba(153, 0, 255, 1); */
+    /* margin-left: 3px; */
+    /* margin-top: 3px; */
+
+  }
+
+  10% {
+    opacity: 1;
+    /* color: rgb(255, 1, 1); */
+    /* margin-left: -4px; */
+  }
+
+  11% {
+    opacity: 1;
+    /* color: rgba(153, 0, 255, 1); */
+    /* margin-left: 0px; */
+
+  }
+
+
+  20% {
+    opacity: 0.8;
+    /* color: rgba(192, 192, 192, 0); */
+  }
+
+  40% {
+    opacity: 0.3;
+  }
+
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes textshining {
+  0% {
+    opacity: 1;
+    /* color: rgba(153, 0, 255, 0); */
+    background: linear-gradient(360deg, rgb(105, 188, 255), rgba(255, 255, 255, 1)2%, rgb(105, 188, 255), rgba(255, 255, 255, 1)2%, rgb(105, 188, 255));
+
+    /* background: linear-gradient(180deg, rgba(12, 97, 255, 1), rgba(255, 255, 255, 1), rgba(153, 0, 255, 1), rgba(255, 255, 255, 1), rgba(12, 97, 255, 1)); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  7% {
+    opacity: 1;
+    /* color: rgba(153, 0, 255, 0); */
+    background: linear-gradient(360deg, rgb(105, 188, 255), rgba(255, 255, 255, 1)2%, rgb(105, 188, 255), rgba(255, 255, 255, 1)2%, rgb(105, 188, 255));
+    /* background: linear-gradient(180deg, rgba(12, 97, 255, 1), rgba(255, 255, 255, 1), rgba(153, 0, 255, 1), rgba(255, 255, 255, 1), rgba(12, 97, 255, 1)); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  8% {
+    opacity: 1;
+    /* color: rgba(255, 0, 0, 0); */
+    background: rgb(255, 252, 69);
+    /* background: linear-gradient(180deg, rgb(255, 252, 69), rgba(255, 255, 255, 1), rgb(255, 9, 255)1%, rgba(255, 255, 255, 1), rgb(255, 255, 255)); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: -10px;
+    margin-top: -2px;
+  }
+
+  9% {
+    opacity: 1;
+    /* color: rgba(153, 0, 255, 0); */
+    background: linear-gradient(360deg, rgb(105, 188, 255), rgba(255, 255, 255, 1)2%, rgb(105, 188, 255), rgba(255, 255, 255, 1)2%, rgb(105, 188, 255));
+
+    /* background: linear-gradient(180deg, rgba(12, 97, 255, 1), rgba(255, 255, 255, 1), rgba(153, 0, 255, 1), rgba(255, 255, 255, 1), rgba(12, 97, 255, 1)); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+    margin-top: 3px;
+
+  }
+
+  10% {
+    opacity: 1;
+    /* color: rgba(255, 1, 1, 0); */
+    /* background: linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 255, 255, 1), rgb(255, 9, 255)1%, rgba(255, 255, 255, 1), rgb(255, 255, 255)); */
+    background: rgb(255, 252, 69);
+
+    /* background: linear-gradient(180deg, rgba(12, 97, 255, 1), rgba(255, 255, 255, 1), rgba(153, 0, 255, 1), rgba(255, 255, 255, 1), rgba(12, 97, 255, 1)); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: -15px;
+  }
+
+  11% {
+    opacity: 1;
+    /* color: rgba(153, 0, 255, 0); */
+    background: linear-gradient(360deg, rgb(105, 188, 255), rgba(255, 255, 255, 1)2%, rgb(105, 188, 255), rgba(255, 255, 255, 1)2%, rgb(105, 188, 255));
+
+    /* background: linear-gradient(180deg, rgba(12, 97, 255, 1), rgba(255, 255, 255, 1), rgba(153, 0, 255, 1), rgba(255, 255, 255, 1), rgba(12, 97, 255, 1)); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* margin-left: 10px; */
+
+  }
+
+
+  30% {
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 0)
+  }
+
+  50% {
+    opacity: 0.3;
+
+  }
+
+
+  70% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 0;
+
+  }
+
+}
+
+
+.colorBoard {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #e3f2fd;
+  /* overflow-y: scroll; */
+}
+
+.colorBoardImg {
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+
+.pickBlocks {
+  position: absolute;
+  /*   background: green; */
+  margin-top: 86px;
+  margin-left: 147px;
+}
+
+.pickBlock {
+  /*   position: absolute; */
+  flex-flow: column nowrap;
+  border: 0px solid grey;
+  display: flex;
+  justify-content: start;
+  width: 140px;
+  height: 16.9px;
+  /*   margin: 0.5rem; */
+  margin-left: 10px;
+}
+
+.pickBlock:hover {
+  opacity: 0.2;
+  /*     background: #eeeeee; */
+  background: #ffff00;
+}
+
+#buyingList {
+  margin-top: 0px;
+  padding-top: 16px;
+  margin-left: 20px;
+  color: rgb(0, 109, 136);
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Microsoft JhengHei;
+}
+
+#selectedButton {
+  margin-top: 10px;
+  margin-left: 50px;
 }
