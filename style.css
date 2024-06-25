@@ -25,7 +25,7 @@ body {
   background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.8)),
-    url("http://www.kanahei.com/upload/2020/08/01_16x9.jpg");
+    url("http://www.kanahei.com");
   background-size: cover;
   background-position: center;
   overflow: hidden;
