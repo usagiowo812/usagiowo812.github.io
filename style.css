@@ -24,8 +24,7 @@ body {
   height: 100vh;
   background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.8)),
-    url("https://pbs.twimg.com/profile_banners/106361099/1709889163/1500x500");
+      rgba(0, 0, 0, 0.8)), url("http://pbs.twimg.com/profile_banners/106361099/1709889163/1500x500.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
